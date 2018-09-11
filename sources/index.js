@@ -1,9 +1,9 @@
-var todos = [];
+var todos = [];//Initializes empty array to add todos
 
-var input = prompt('What would you like to do? ');
+var input = prompt('What would you like to do? ');//Prompts user to input what they would like to do from the list generated in the html file
 
-while (input !== 'quit') {
-    if (input === 'list') {
+while (input !== 'quit') {//Allows the app to continue to prompt user until quit is entered
+    if (input === 'list') {//Allows user to access the list of todos
         listTasks();
     } else if (input === 'new') {
         addTasks();
